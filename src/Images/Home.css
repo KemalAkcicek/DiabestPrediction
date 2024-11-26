@@ -1,0 +1,11 @@
+.resim1 {
+  width: 100%; 
+  height: auto; 
+  display: block;
+  margin-top: 20px;
+  
+  max-width: calc(100vw - 40px); 
+  max-height: calc(100vh / 3 - 40px); 
+  object-fit: cover;  
+}
+
