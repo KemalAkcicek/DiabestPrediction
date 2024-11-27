@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Diyabet Tahmin Web Uygulaması
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Genel Bakış
+Bu proje, **React**, **Flask** ve **Spring Boot** kullanılarak geliştirilmiş bir web uygulamasıdır. Uygulama, kullanıcıların diyabetle ilgili verilerini girmelerini sağlar. Girilen veriler, Flask ile oluşturulan bir makine öğrenmesi modeli tarafından işlenir ve sonuçlar kullanıcı arayüzünde görüntülenir. Ayrıca, girilen veriler ve tahmin sonuçları, **Spring Boot** ile yönetilen bir veritabanında saklanır.
 
-## Available Scripts
+## Özellikler
+- **Veri Girişi:** Kullanıcılar, React ön yüzü üzerinden diyabetle ilgili bilgilerini interaktif bir form aracılığıyla girebilirler.
+- **Makine Öğrenmesi Tahmini:** Girilen veriler, Flask backend’ine gönderilir ve burada önceden eğitilmiş bir makine öğrenmesi modeli ile işlenir. Model, kullanıcının diyabet riskini tahmin eder.
+- **Sonuçların Gösterilmesi:** Tahmin sonucu ve kullanıcının girdiği veriler, kullanıcıya gösterilir.
+- **Veri Saklama:** Tüm kullanıcı verileri ve sonuçlar, Spring Boot backend’inde bir veritabanına kaydedilir ve gelecekteki referanslar ve analizler için saklanır.
 
-In the project directory, you can run:
+## Teknoloji Yığını
+- **Frontend:** React.js
+- **Backend:** Flask (makine öğrenmesi modeli için) ve Spring Boot (veri saklama ve API yönetimi için)
+- **Veritabanı:** MySQL (Spring Boot ile yönetilen)
 
-### `npm start`
+ ## Ana Sayfası
+ ![image](https://github.com/user-attachments/assets/3758e4e7-76fc-435b-bdd9-cf9e13c355a4)
+ 
+  ## Hastalıkla Ilgili Tahminlerin Yapıldığı Sayfası
+  ![image](https://github.com/user-attachments/assets/033ae319-58c8-4237-855b-29d4761fa7f1)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ## Hasta Listesi Sayfası
+   ![image](https://github.com/user-attachments/assets/7a9bf162-0c8c-47b6-983a-a8392bfde003)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ## Kullanıcı Kayıt Sayfası
+   ![image](https://github.com/user-attachments/assets/31c74a1e-ff46-47a4-8a5a-48ce8983d0cd) 
 
-### `npm test`
+   ## Kullanıcı Giriş Sayfası
+   ![image](https://github.com/user-attachments/assets/4ae7e91e-d21d-416e-aead-32e73be25ba6)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
